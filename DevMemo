@@ -1,6 +1,6 @@
 Coffee Serve Robot
 
-Input: Alexa, Slack
+Input: Alexa, Siri, Slack
 Support:
 Output: Coffee
 
@@ -78,5 +78,82 @@ Looper's issue -> If you user looper in a band, Looper will be the conductor, bu
 Sparki
 
 Suceeded to upload program.
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Oct. 8th 2016]
+
+DONE: Basics
+
+DONE: Bluetooth
+https://www.youtube.com/watch?v=RTmjy3uDhPg
+
+DONE: 
+http://arcbotics.com/lessons/using-the-ultrasonic-distance-sensor/
+http://arcbotics.com/lessons/restore-default/
+http://arcbotics.com/lessons/sparki/
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Oct. 8th 2016]
+
+DONE: Robotics
+
+For inside-room location, Useing beacons?
+
+Sparki Magnetometer can study direction
+
+Sparki works as a remote sensor, and Send datas to host server via bluetooth.
+Host Server collecting datas and operate Sparki.
+
+How host computer knows Sparki Location.
+Idea1: Magnetometer
+Idea2: Indoor location/indoor positioning system/ iBeacon
+
+Put Beacons on a grid map(In office) like the following.
+x x x x x
+x x x x x
+x x x x x
+
+If you are on o
+x x x x x
+x o x x x
+x x x x x
+beacons around the position would be catch strong signal strength.
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Oct. 10th 2016]
+
+Server (MacOS Application)
+CoffeeBot (Spraki)
+
+TODO: Server interacts with CoffeeBot via bluetooth
+
+https://developer.apple.com/bluetooth/
+Mac OS Cocoa application 
+
+Mac OS X Development Tutorial for Beginners Part 3: Your First OS X App
+https://www.raywenderlich.com/110269/mac-os-x-development-tutorial-beginners-part-3-first-os-x-app
+
+https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/PerformingCommonCentralRoleTasks/PerformingCommonCentralRoleTasks.html#//apple_ref/doc/uid/TP40013257-CH3-SW1
+
+TODO: List all Bluetooth Devices
+
+http://www.raywenderlich.com/85900/arduino-tutorial-integrating-bluetooth-le-ios-swift
+
+LMP Version:	2.1 (0x4)
+YOu can't use Core Bluetooth
+
+TODO: MacOS serial Communication bluetooth
+
+https://www.mac-usb-serial.com/wordpress/serial-port-programming-swift-mac-os-x/
+
+DONE: rvm
+DONE: cocoapod
+TODO: Serial libraries for mac
+
+https://www.mac-usb-serial.com/wordpress/serial-port-programming-swift-mac-os-x/
+
+pod update -> Never end
+[!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
+You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
 
 
