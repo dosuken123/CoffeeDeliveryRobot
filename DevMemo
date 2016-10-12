@@ -156,4 +156,61 @@ pod update -> Never end
 [!] Unable to add a source with url `https://github.com/CocoaPods/Specs.git` named `master`.
 You can try adding it manually in `~/.cocoapods/repos` or via `pod repo add`.
 
+//////////////////////////////////////////////////////////////////////////////////////
+[Oct. 11th 2016]
+
+TODO: Slack <-> Mac application
+TODO: Slack Develop
+        What can i do with it?
+DONE: Make sample project Slack Bot with Node.js.
+TODO: Arduino and NodeJS Communication With Serial Ports
+NEXT: Make sample project Alexa with Node.js.
+NEXT: Make sample project Siri with Node.js.
+
+https://miosys.slack.com/apps/build/custom-integration
+
+Arduino and NodeJS Communication With Serial Ports
+http://danialk.github.io/blog/2014/04/12/arduino-and-nodejs-communication-with-serial-ports/
+
+TODO: Apparently, Extra Server is need which can run on office LAN. -> Beagle boan?
+
+Building a Slack Bot with Node.js and Chuck Norris Super Powers
+https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers
+
+Node.js <-> Slack/Alexa/Siri
+
+Slack Real Time messaging API, a websocket-based API
+
+DONE: Make sample project  Slack Bot with Node.js.
+
+BOT_API_KEY=secure node bin/bot.js
+BOT_API_KEY=secure BOT_NAME=cofeeserverbot node bin/bot.js
+
+https://miosys.slack.com/services/89729339316?updated=1
+https://api.slack.com/bot-users
+https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers
+https://github.com/lmammino/norrisbot
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Oct. 12th 2016]
+
+DONE: Arduino and NodeJS Communication With Serial Ports
+PEND: BUild a new server with beaglebone. (If you call coffee bot, at least you need to be here in the office, so not high priority.)
+
+ll /dev/{tty,cu}.*
+
+https://www.npmjs.com/package/serialport
+
+"/dev/tty.usbserial-FTBQY24X"
+11520
+
+SLACK_BOT_API_TOKEN=secure SLACK_BOT_NAME=coffeeserverbot SERIALPORT_NAME="/dev/tty.usbserial-FTBQY24X" SERIALPORT_BAUDRATE=115200 node app.js 
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Oct. 13th 2016]
+
+TODO: Info command
+
+https://www.npmjs.com/package/slackbots
+https://www.npmjs.com/package/serialport
 
