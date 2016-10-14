@@ -214,3 +214,19 @@ TODO: Info command
 https://www.npmjs.com/package/slackbots
 https://www.npmjs.com/package/serialport
 
+Connecting ArcBotics
+
+SLACK_BOT_API_TOKEN=xx SLACK_BOT_NAME=coffeeserverbot SERIALPORT_NAME="/dev/tty.ArcBotics-DevB" SERIALPORT_BAUDRATE=9600 node app.js 
+
+TODO: Response split
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Oct. 14th 2016]
+
+TODO: Line following accuracy
+
+TOOD: Stop detection -> stop  -> make sure multiple times -> 
+        ng -> rollback
+        ok -> next
+TODO: Use Edge sensor to narrow searching direction
+TODO: Use Magnetmetor to narrow searching direction
