@@ -1,5 +1,5 @@
-# CoffeeServeRobot
+# CoffeeDeliveryRobot
 
-Slack + Sparki(arduino) = Coffee Serve Robot
+Slack + Sparki(arduino) = Coffee Delivery Robot
 
 
