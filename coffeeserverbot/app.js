@@ -13,8 +13,8 @@ var stock_data = "";
 var current_sparki_info = null;
 var current_sparki_state = { 'behavior': 'I am free at home', 'flag': 0, 'pool': 0, 'pool_timeout': 0 };
 var pool_threshold = 10;
-var pool_timeout_max = 10;
-var threshold = 600;
+var pool_timeout_max = 5;
+var threshold = 400;
 
 // Arguments
 // e.g.
@@ -65,6 +65,7 @@ serialPort.on('open', function(){
   //           serialPort.write('!28\n', serialPortCallback); // 90 degree turn right
   //           serialPort.write('!26\n', serialPortCallback); // move forward
   //           current_sparki_state.behavior = 'I am going back to my home';
+  console.log('Opend!');
   serialPort.write('!10\n',serialPortCallback); // Data Request
 
 });
@@ -143,7 +144,7 @@ serialPort.on('data', function (data) {
       if (stock_data.charAt(0) == '!' && stock_data.charAt(1) == '1' && stock_data.charAt(2) == '1') { // header + data sending + response
         var response = stock_data.substring(3);
         response = response.replace(/\n$/, "").replace(/\r$/, "");
-        // console.log('response: ' + response);
+        console.log('response: ' + response);
         var array = response.split(',');
 
         // Update status
@@ -591,16 +592,16 @@ slackbot.on('message', function(data) {
       slackbot.postMessageToChannel(channel.name, JSON.stringify(current_sparki_info), {as_user: true});
     }
     else if (data.text.toLowerCase().indexOf('what') > -1) {
-      slackbot.postMessageToChannel(channel.name, JSON.stringify(current_sparki_state), {as_user: true});
-      // slackbot.postMessageToChannel(channel.name, current_sparki_state.behavior, {as_user: true});
+      // slackbot.postMessageToChannel(channel.name, JSON.stringify(current_sparki_state), {as_user: true});
+      slackbot.postMessageToChannel(channel.name, current_sparki_state.behavior, {as_user: true});
     }
     else if (data.text.toLowerCase().indexOf('coffee') > -1) {
       if (current_sparki_state.behavior == 'I am free at home') {
-        slackbot.postMessageToChannel(channel.name, "Got it! Please be patient until i serve it.", {as_user: true});
+        slackbot.postMessageToChannel(channel.name, "Got it! Please be patient in minutes.", {as_user: true});
         current_sparki_state.flag = 0;
         current_sparki_state.behavior = 'I am going to grab a coffee at pot';
       }
-      else if (current_sparki_state.behavior == 'I am free at home') {
+      else {
         slackbot.postMessageToChannel(channel.name, "Sorry... I'm on work. Ask me Later.", {as_user: true});
       }
       // serialPort.write('!7' + current_sparki_state.behavior + '\n', serialPortCallback); // LCD text

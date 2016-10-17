@@ -7,18 +7,8 @@ On this project, i made him a Coffee delivery robot.
 He gets all your orders, responds to your questions and deliver a coffee to your place, gently.
 
 # It's working
-1. New order comes from my boss! Sparki responds.  
-  TODO: Movie  
-2. Sparki arrived at a pot, and calls me. I cook a coffee and give him.  
-  TODO: Movie  
-3. Now Sparki is delivering a coffee to my boss. I hope my boss is patient...  
-  TODO: Movie
-4. My boss seems to be inpatient... He asked Sparki what he's doing right now.  
-  TODO: Movie
-5. Phew! It was long way! Here is your coffee. I'm going to back home. Bye!  
-  TODO: Movie
-6. I arrived at home now. Waiting next order.  
-  TODO: Movie
+Check the test video.
+https://youtu.be/ti4DqBgy2YE
 
 # Ingredients
 * [Sparki](http://arcbotics.com/products/sparki/)
@@ -41,4 +31,7 @@ He gets all your orders, responds to your questions and deliver a coffee to your
 **You can download all sources from [here](https://github.com/dosuken123/CoffeeServeRobot).**  
 
 # References
-TODO: from dev memo
+https://www.npmjs.com/package/slackbots
+https://www.npmjs.com/package/serialport
+https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers
+http://arcbotics.com/lessons/sparki/
