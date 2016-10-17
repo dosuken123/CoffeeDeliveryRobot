@@ -7,8 +7,8 @@ On this project, i made him a Coffee delivery robot.
 He gets all your orders, responds to your questions and deliver a coffee to your place, gently.
 
 # It's working
-Check the test video.
-https://youtu.be/TqP_HGcdzCo
+Check the test video.  
+https://youtu.be/TqP_HGcdzCo  
 
 # Ingredients
 * [Sparki](http://arcbotics.com/products/sparki/)
@@ -31,7 +31,7 @@ https://youtu.be/TqP_HGcdzCo
 **You can download all sources from [here](https://github.com/dosuken123/CoffeeServeRobot).**  
 
 # References
-https://www.npmjs.com/package/slackbots
-https://www.npmjs.com/package/serialport
-https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers
-http://arcbotics.com/lessons/sparki/
+https://www.npmjs.com/package/slackbots  
+https://www.npmjs.com/package/serialport  
+https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers  
+http://arcbotics.com/lessons/sparki/  
